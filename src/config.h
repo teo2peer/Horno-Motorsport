@@ -1,13 +1,13 @@
-int buzzer = 12;
+int buzzer = 10;
 unsigned long act = 0;
 // HORNO BOTONES
 #define POWER 5
 #define SET 6
-#define UP 7
-#define DOWN 8
+#define UP 8
+#define DOWN 7
 
 #define LED 9
-#define BUTTON 10
+#define BUTTON 12
 
 // tiempo entre pulsacion minimo (NO TOCAR)
 int minAwaitTime = 130;

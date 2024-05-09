@@ -35,7 +35,7 @@ void setup()
 	Serial.begin(9600);
 	for (int i = 0; i < 3; i++)
 	{
-		tone(buzzer, 1000);
+		tone(buzzer, 300+i*500);
 		delay(100);
 		noTone(buzzer);
 		delay(100);
@@ -178,8 +178,8 @@ void setMinTemp()
 	digitalWrite(UP, 1);
 	digitalWrite(LED, 1);
 
-	// esperrar 70.9 segundos
-	esperar(70600);
+	// esperrar 71.4 segundos
+	esperar(70900);
 	digitalWrite(UP, 0);
 
 	esperar(minAwaitTime);
@@ -283,7 +283,7 @@ void confirmSound()
 	esperar(100);
 	noTone(buzzer);
 	esperar(100);
-	tone(buzzer, 440);
+	tone(buzzer, 480);
 	esperar(100);
 	noTone(buzzer);
 	esperar(1000);
